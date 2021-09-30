@@ -95,9 +95,8 @@
             height: 80px; 
             width: 80px; 
             margin: 140px;
-            position: relative;
             margin-top: 10px;
-            left: 200px;
+            
 
         }
 
@@ -107,7 +106,6 @@
             font-size: large;
             font-weight: bold;
             position: relative;
-            left: 200px;
             bottom: 120px;
 
         }
@@ -117,7 +115,6 @@
             font-size: medium;
             margin: 10px;
             position: relative;
-            left: 220px;
             bottom: 115px;
         }
 
@@ -149,6 +146,10 @@
             font-size: 20px;
             font-weight: bold;
             text-align: center;
+            border-collapse: collapse;
+        }
+        #t2, th, tr, td{
+            border-bottom: 1px solid rgb(233, 228, 228);
         }
 
         #btn2{
@@ -216,7 +217,7 @@
 
             </div>
 
-            <div class="flexslider" style="width: 700px; height: 300px; position: relative; left: 650px; bottom: 320px; margin: 0%; padding: 0%;">
+            <div class="flexslider" style="width: 50%; height: 300px; float: right; position: relative; right: 100px; bottom: 330px; margin: 0%; padding: 0%;">
                 <ul class="slides">
                     <li><img src="./3.jpg" alt="" width="300px" height="300px"></li>
                     <li><img src="./4.jpg" alt="" width="300px" height="300px"></li>
@@ -235,7 +236,7 @@
 
             </div>
 
-            <table>
+            <table style="margin: auto;">
                 
                 <tbody>
                     <tr>
@@ -347,9 +348,19 @@
 
                     <tr>
                         <td>Pricing</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <p style="display: inline-block; font-size: 0.5px; position: relative; bottom: 20px;">$</p>
+                            <span style="font-size: 40px; font-weight: bold;">0</span>
+                        </td>
+                        <td>
+                            <p style="display: inline-block; font-size: 0.5px; position: relative; bottom: 20px;">$</p>
+                            <span style="font-size: 40px; font-weight: bold; ">6</span>
+                            <span style="font-weight: lighter; font-size: 20px;">/month</span>
+                        </td>
+                        <td>
+                            <p style="display: inline-block; font-size: 0.5px; position: relative; bottom: 20px;">$</p>
+                            <span style="font-size: 40px; font-weight: bold;">99</span>
+                        </td>
                     </tr>
 
                     <tr>
