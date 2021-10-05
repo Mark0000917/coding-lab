@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+    <style>
+        #bg1{
+            margin: 0%;
+            padding: 0%;
+            height: 100px;
+            overflow: show;
+            display: flex;
+            background-color: rgb(94, 89, 89);
+            border-bottom: 3px solid;
+            border-bottom-color: rgb(214, 87, 87);
+            align-items: center;
+            justify-content: center;
+        }
+
+        #logo{
+            max-width: 200px;
+            max-height: 30px;
+            cursor: pointer;
+        }
+
+        #word1{
+            margin-left: 90px;
+            margin-right: 90px;
+            width: 600px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        body a{
+            color: white;
+            font-size: large; 
+            text-decoration: none;
+            font-weight: bold
+        }
+
+        #bg2{
+            margin: 0%;
+            padding: 0%;
+            height: 800px;
+            overflow: hidden;
+            display: flex;
+            background-color: rgb(94, 89, 89);
+            border-bottom: 3px solid;
+            border-bottom-color: rgb(214, 87, 87);
+            align-items: center;
+            justify-content: center;
+        }
+
+        #dp1{
+            display: none;
+        }
+
+        #logo2{
+            max-width: 50vw;
+            max-height: 20vh;
+        }
+
+        #bg3{
+            margin: 0%;
+            padding: 0%;
+            height: 700px;
+            overflow: hidden;
+            display: flex;
+            background-color: rgb(94, 89, 89);
+            border-bottom: 3px solid;
+            border-bottom-color: rgb(214, 87, 87);
+            justify-content: center;
+            
+        }
+        .p1{
+            font-size: 60px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .p2{
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #p3{
+            font-size: 30px; 
+            font-weight: bold; 
+            text-align: center; 
+            margin-top: 15px;
+        }
+        #bg4{
+            margin: 0%;
+            padding: 0%;
+            height: 700px;
+            overflow: hidden;
+            display: flex;
+            background-color: rgb(94, 89, 89);
+            border-bottom: 3px solid;
+            border-bottom-color: rgb(214, 87, 87);
+            
+        }
+        #con1{
+            overflow-y: auto;
+            height: 700px;
+            width: 1000px;
+            position: relative;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        #con1::-webkit-scrollbar
+        {
+            width: 3px;
+            height: 16px;
+            background-color: rgb(94, 89, 89);
+        }
+        
+        
+        #con1::-webkit-scrollbar-track
+        {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            background-color: rgb(94, 89, 89);
+        }
+        
+        #con1::-webkit-scrollbar-thumb
+        {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: rgb(214, 87, 87);
+        }
+
+
+
+
+        .p3{
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+            color: white;
+        }
+        .p4{
+            font-size: 15px;
+            font-weight: bold;
+            text-align: left;
+            color: white;
+        }
+        #bg5{
+            margin: 0%;
+            padding: 0%;
+            height: 150px;
+            overflow: hidden;
+            display: flex;
+            background-color: rgb(94, 89, 89);
+            
+            
+        }
+
+        @media (max-width: 992px){
+            #logo {
+                position: fixed;
+                left: 10%;
+            }
+            #word1{
+                display: none;
+            }
+            #dp1{
+                display: inline;
+                position: fixed;
+                right: 10%;
+            }
+            .p1{
+                font-size: 30px;
+            }
+            .p2{
+                font-size: 20px;
+            }
+            #p3{
+                font-size: 15px;
+            }
+
+        }
+
+
+
+
+    </style>
+    <head>
+        <title>Bootstrap</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+
+    <body style="margin: 0%; padding: 0%;">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        
+        <div id="bg1">
+
+            <img id="logo" src="./logo.png" >
+            <div id="word1">
+                <a href="Untitled-1.html"> 首頁 </a>
+                <a href="Untitled-1.html#bg3"> 介紹 </a>
+                <a href="Untitled-1.html#bg4"> 功課 </a>
+                <a href=""> 專案進度 </a>
+                <a href=""> 願景 </a>
+                <a href=""> 聯絡我們 </a>
+            </div>
+
+            <div class="dropdown" id="dp1">
+
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="Untitled-1.html"> 首頁 </a></li>
+                    <li><a class="dropdown-item" href="Untitled-1.html#bg3"> 介紹 </a></li>
+                    <li><a class="dropdown-item" href="Untitled-1.html#bg4"> 功課 </a></li>
+                    <li><a class="dropdown-item" href="#"> 專案進度 </a></li>
+                    <li><a class="dropdown-item" href="#"> 願景 </a></li>
+                    <li><a class="dropdown-item" href="#"> 聯絡我們 </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bg2">
+
+            <img id="logo2" src="./logo.png" >
+
+        </div>
+
+        <div id="bg3">
+            
+            <div class="container">
+                <div style="font-size: 30px; font-weight: bold; height: 150px; max-width: 100%; position: relative; left: 10%; padding-top: 50px;">關於實驗室</div>
+                <div class="row">
+                    <div class="paragraph col-lg-4 col-md-12">
+                        <p class="p1">熱烈討論</p>
+                        <p class="p2">0</p>
+                        <p class="p1">年</p>
+                    </div>
+                    <div class="paragraph col-lg-4 col-md-12">
+                        <p class="p1">每週開會</p>
+                        <p class="p2">0</p>
+                        <p class="p1">次</p>
+
+                    </div>
+                    <div class="paragraph col-lg-4 col-md-12">
+                        <p class="p1">核心人員</p>
+                        <p class="p2">0</p>
+                        <p class="p1">人</p>
+                    </div>
+                </div>
+                <div id="p3">讚喔</div>
+            </div>
+        </div>
+
+        <div id="bg4">
+
+            <div class="container" id="con1">
+                <div style="font-size: 30px; font-weight: bold; height: 150px; max-width: 500px; position: relative; left: 10%; padding-top: 50px; color: white;">最新動態</div>
+                <div class="row">
+                    <div class="col" style="border: solid 2px rgb(214, 87, 87); margin: 30px;">
+                        <p class="p3">First Work</p>
+                        <p class="p4">目的: 練習 html, css</p>
+                        <a href="https://www.thelalu.com.tw/zh-tw/Explore"><p class="p4">範例網站</p></a>
+                        <p class="p4">時程: 1個星期</p>
+                        <p class="p4">說明: 依照範例格式製作網頁</p>
+                        <p class="p4">其他資源:</p>
+                        <a href="https://www.sololearn.com/profile/15801471"><p class="p4">Sololearn</p></a>
+                        <a href="https://www.w3schools.com/"><p class="p4">W3School</p></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        
+                    </div>
+
+                    
+                    <div class="col" style="border: solid 2px rgb(214, 87, 87); margin: 30px;">
+                        <p class="p3">Second Work</p>
+                        <p class="p4">目的: 練習 html, css</p>
+                        <a href="https://codepip.com/"><p class="p4">範例網站</p></a>
+                        <p class="p4">時程: 1個星期</p>
+                        <p class="p4">說明: 依照範例格式製作網頁</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col" style="border: solid 2px rgb(214, 87, 87); margin: 30px;">
+                        <p class="p3">Third Work</p>
+                        <p class="p4">目的: 學習套版(BootStrap)、響應式網頁(RWD)</p>
+                        <p class="p4">時程: 1個星期</p>
+                        <a href="https://mopcon.org/2020/"><p class="p4">範例網站</p></a>
+                        <p class="p4">說明: 依照範例格式製作網頁(符合響應式網頁的設計)</p>
+                        <p class="p4">其他資源:</p>
+                        <a href="https://tw.alphacamp.co/blog/rwd-responsive-web-design-introduction"><p class="p4">Responsive Web Design</p></a>
+                        <a href="https://www.oxxostudio.tw/articles/201810/css-media-queries.html"><p class="p4">CSS Media</p></a>
+                        <a href="https://getbootstrap.com/"><p class="p4">BootStrap</p></a>
+                        <a href="https://tw.alphacamp.co/blog/bootstrap-4-introduction"><p class="p4">BootStrap 介紹</p></a>
+                        <a href="http://www.w3big.com/zh-TW/bootstrap/bootstrap-grid-system.html"><p class="p4">Grid System(bs4)</p></a>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        
+                    </div>
+                    <div class="col" style="border: solid 2px rgb(214, 87, 87); margin: 30px;">
+                        <p class="p3">Fourth Work</p>
+                        <p class="p4">目的: 學習 Javascript、動態效果</p>
+                        <p class="p4">時程: 1個星期</p>
+                        <a href="https://github.com/Mark0000917/coding-lab"><p class="p4">範例網站</p></a>
+                        <p class="p4">說明: 製作單人網頁遊戲(任選)</p>
+
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+    </body>
+
+    <footer id="bg5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div style="margin: 20px;">聯絡我們</div>
+                </div>
+                <div class="col" style="margin-right: 400px;">
+                    <button type="button" onclick="copyEvent('copy')" id="copy" style="margin: 20px; padding:0%; border:0px; background-color:transparent">g20000917@gmail.com</button>
+                </div>
+                <div class="col">
+                    <div style="margin: 20px;">在這 #Coding-lab</div>
+                </div>
+                <div class="col">
+                    <button type="button" style="background-color: transparent; border: 0ch;" onclick="location.href='https://github.com/Mark0000917/coding-lab'"><img src="./1.png" style="width: 30px; height: 30px; margin: 20px;"></button>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function copyEvent(id)
+        {
+            var str = document.getElementById(id);
+            window.getSelection().selectAllChildren(str);
+            document.execCommand("Copy")
+        }
+    </script>
+
+
+</html>
